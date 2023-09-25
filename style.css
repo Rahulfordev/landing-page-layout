@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Secular+One&display=swap");
+/* ------- Variables --------- */
+
+/***** Color variables *****/
+:root {
+  --color-primary: #223140;
+  --color-secondary: #1d1d1d;
+  --bg-color: rgba(217, 217, 217, 0.1);
+  --color-blue: #1361f5;
+  --color-white: #fff;
+  --color-gray: #535558;
+  --color-yello: #ecb22d;
+}
+
+/***** Font variable *****/
+
+:root {
+  --font-family-inter: "Inter", sans-serif;
+  --font-secondary-Secular: "Secular One", sans-serif;
+}
+
+/***** Font size variable *****/
+:root {
+  --font-14px: 14px;
+  --font-16px: 16px;
+  --font-18px: 18px;
+  --font-24px: 24px;
+  --font-32px: 32px;
+  --font-48px: 48px;
+}
+
+/***** Font weight *****/
+:root {
+  --font-bold: 700;
+  --font-medium-bold: 600;
+  --font-medium: 500;
+  --font-regular: 400;
+}
+
+/***** Width variable *****/
+:root {
+  --body-max-width: 120rem;
+}
+
+/* ------ Reset CSS ------ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0px;
+  padding: 0px;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family-inter);
+}
+
+header,
+main,
+footer {
+  max-width: var(--body-max-width);
+  margin-inline: auto;
+}
+
+/******88888  Components  88888*******/
+
+/* {{{{ Button }}}} */
+.btn {
+  padding: 10px 27px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  font-size: var(--font-16px);
+  font-weight: var(--font-medium);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* ========= nav bar ========= */
+.nav-parimary {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin-inline: auto;
+}
+
+.nav-parimary__logo {
+  font-family: var(--font-secondary-Secular);
+  font-size: var(--font-24px);
+  font-weight: var(--font-regular);
+  color: var(--color-secondary);
+}
+
+.nav-parimary__links {
+  display: inline-flex;
+  padding-left: 10rem;
+}
+
+.nav-parimary__link {
+  padding-left: 40px;
+  color: var(--color-secondary);
+  font-style: var(--font-16px);
+  font-weight: var(--font-medium);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+/* =========== hero section =========== */
+.header-section__hero {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-inline: auto;
+  gap: 72px;
+}
+
+/* ==== hero image box ==== */
+.hero__image-box {
+  padding-top: 55px;
+}
+
+/* ==== hero content ==== */
+.hero__title {
+  font-size: var(--font-48px);
+  font-weight: var(--font-bold);
+  max-width: 310px;
+  padding-top: 89px;
+}
+
+.hero__description {
+  max-width: 626px;
+  font-size: var(--font-18px);
+  font-weight: var(--font-regular);
+  color: var(--color-primary);
+  padding: 35px 0 45px 0;
+}
+
+.hero__button > .btn-secondary {
+  border: 1px solid #e0e0e0;
+}
+
+/* =========== benefits section =========== */
+.benefits-section {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 87px;
+}
+
+.benefits-section__components {
+  display: flex;
+  gap: 20px;
+}
+
+.benefits-section__component {
+  max-width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.component__title {
+  color: var(--color-primary);
+  font-weight: var(--font-medium-bold);
+}
+
+.component__description {
+  font-size: var(--font-14px);
+  font-weight: var(--font-regular);
+  color: var(--color-gray);
+  max-width: 286px;
+  padding: 8px 0;
+  line-height: 22px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  background-color: #fff7e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  color: var(--color-yello);
+}
+
+/* =========== functionality-section =========== */
+.functionality-section {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-inline: auto;
+  margin-top: 87px;
+  gap: 70px;
+}
+
+.functionality__content {
+  padding-top: 2rem;
+}
+
+.functionality__subtitle {
+  font-size: var(--font-24px);
+  font-weight: var(--font-bold);
+  color: var(--color-blue);
+  padding-bottom: 15px;
+}
+
+.functionality__title {
+  font-size: var(--font-32px);
+  font-weight: var(--font-bold);
+}
+
+.functionality__description {
+  font-size: var(--font-18px);
+  font-weight: var(--font-regular);
+  color: var(--color-primary);
+  padding: 35px 0;
+  max-width: 599px;
+}
+
+/* =========== integrations-section  ========= */
+
+.integrations-section {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-inline: auto;
+  margin-top: 87px;
+}
+
+.integrations__description {
+  max-width: 578px;
+  padding: 35px 0 60px 0;
+}
