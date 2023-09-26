@@ -10,6 +10,7 @@
   --color-white: #fff;
   --color-gray: #535558;
   --color-yello: #ecb22d;
+  --color-white-gray: #d9d9d9;
 }
 
 /***** Font variable *****/
@@ -274,4 +275,66 @@ footer {
 .integrations__description {
   max-width: 578px;
   padding: 35px 0 60px 0;
+}
+
+/* =========== testimonial-section  ========= */
+.testimonial-section {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 87px;
+  margin-bottom: 30px;
+}
+
+.testimonial__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimoial__card {
+  width: 378px;
+  height: 348px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.card__image {
+  position: absolute;
+  left: 37%;
+  top: -14%;
+}
+
+.card__image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card__content {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.card__description {
+  max-width: 322px;
+  color: var(--color-gray);
+  font-size: var(--font-14px);
+  font-weight: var(--font-regular);
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.card__company {
+  color: var(--color-white-gray);
+  font-family: var(--font-secondary-Secular);
+  font-size: var(--font-24px);
+  font-weight: var(--font-regular);
+  padding: 35px 0;
+}
+
+.card__position {
+  color: var(--color-primary);
+  font-size: var(--font-18px);
+  font-weight: var(--font-medium-bold);
 }
